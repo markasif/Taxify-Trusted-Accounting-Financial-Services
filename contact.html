@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxify - Contact Our Accounting & VAT Experts in Saudi Arabia</title>
+    <meta name="description" content="Contact Taxify for expert accounting, VAT, and financial consulting services in Saudi Arabia. Reach our team in Jeddah or Malappuram, India.">
+    <meta name="keywords" content="contact, Taxify, accounting services, VAT, consulting, Saudi Arabia, Jeddah, Malappuram, India, financial advice, tax help">
+    <meta name="author" content="Taxify">
+    <link rel="canonical" href="https://www.yourdomain.com/contact.html"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <img src="Images/Logo.png" alt="Taxify Logo">
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-us">
+            <div class="contact-container">
+                <h2>Contact <span class="highlight">Taxify</span></h2>
+                <p>Have questions or need assistance? Reach out to us today!</p>
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <h3>Get in Touch</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Malappuram, India</p>
+                        <p><i class="fas fa-phone"></i> +918589898504</p>
+                        <p><i class="fas fa-envelope"></i> taxifyconsultingksa@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Jeddah, Saudi Arabia</p>
+                        <p><i class="fas fa-phone"></i> +966590441593</p>
+                    </div>
+                    <div class="contact-form">
+                        <form id="whatsapp-form">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                            <input type="email" id="email" placeholder="Your Email" required>
+                            <input type="tel" id="phone" placeholder="Your Phone" required>
+                            <textarea id="message" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn-primary">Send via WhatsApp</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Taxify. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('whatsapp-form').addEventListener('submit', function (e) {
+            e.preventDefault(); 
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AMessage: ${message}`;
+
+            const whatsappNumber = '+918589898504'; 
+
+            const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
+            window.open(whatsappLink, '_blank');
+        });
+    </script>
+</body>
+</html>
